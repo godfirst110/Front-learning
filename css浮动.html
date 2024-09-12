@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css浮动</title>
+    <style>
+        .father{
+            background-color: orange;
+            height: 150px;
+            /*overflow: hidden;*/
+        }
+        .father::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .leftson{
+            width: 100px;
+            height: 100px;
+            background-color: khaki;
+            float: left;
+        }
+        .rightson{
+            width: 100px;
+            height: 100px;
+            background-color: fuchsia;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="leftson">左浮动</div>
+        <div class="leftson">左浮动</div> <div class="leftson">左浮动</div> <div class="leftson">左浮动</div> <div class="leftson">左浮动</div> <div class="leftson">左浮动</div> <div class="leftson">左浮动</div> <div class="leftson">左浮动</div> <div class="leftson">左浮动</div> <div class="leftson">左浮动</div>
+        <div class="rightson">右浮动</div> <div class="rightson">右浮动</div> <div class="rightson">右浮动</div> <div class="rightson">右浮动</div> <div class="rightson">右浮动</div> <div class="rightson">右浮动</div> <div class="rightson">右浮动</div> <div class="rightson">右浮动</div> <div class="rightson">右浮动</div>
+    </div>
+</body>
+</html>

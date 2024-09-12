@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        /*这是元素选择器*/
+        h2{
+            color: aqua;
+        }
+        /*类选择器*/
+        .height:hover{
+            background-color: rgb(255, 0, 34);
+        }
+        /*id选择器*/
+        #jiang{
+            background-color: rgb(255, 127, 212);
+            font-size: larger;
+        }
+        /*通用选择器*/
+        *{font-family: "kaiti";}
+        /*子元素选择器*/
+        .father>.son{
+            color: aqua;
+            font-style: normal;
+            font-size: large;
+        }
+        /*后代选择器*/
+        .father p{
+            color: blue;
+        }
+        /*相邻兄弟选择器*/
+        h3+p{
+            color: brown;
+            background-color: aqua;
+        }
+        /*伪类选择器*/
+#hello:hover{
+    background-color: aqua;
+}
+    </style>
+</head>
+<body>
+    <h1>
+        不同类型的css选择器
+    </h1>
+    <h2>这是一个元素选择器实例
+
+    </h2>
+    <h3>
+        这是一个类选择器实例
+    </h3>
+    <h3 class="height">这是另一个类选择器实例</h3>
+<h4 id="jiang">这是使用id选择器实例
+
+
+</h4>
+<div class="father">
+    <p class="son">这是一个子元素选择器</p>
+    <div>
+        <p class="grandson">
+            这是一个后代选择器标签
+        </p>
+    </div>
+</div>
+<p>这是一个p标签</p>
+<h3>这是一个相邻兄弟选择器示例</h3>
+<p>这也是一个p标签</p></p>
+<h3 id="hello">这是一个伪类选择器标签</h3>
+</body>
+</html>
